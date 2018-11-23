@@ -1,0 +1,18 @@
+{
+  "name": "dotfiles",
+  "version": "0.0.1",
+  "description": "Easy and safe system, application, and user preferences management",
+  "keywords": [
+    "dotfiles"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Ruby Jasmin",
+    "email": "rj@rubyjasmin.com",
+    "url": "https://rubyjasmin.com/"
+  },
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
