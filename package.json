@@ -21,10 +21,8 @@
   "private": true,
   "main": "lib/index.js",
   "scripts": {
-    "commitmsg": "commitlint -e $GIT_PARAMS",
     "cz": "git-cz",
     "lint": "tslint -c ./config/ts/tslint.json",
-    "precommit": "lint-staged",
     "start": "",
     "test": "jest",
     "semantic-release": "semantic-release --no-ci"
@@ -47,6 +45,12 @@
     "tslint-config-prettier": "^1.16.0",
     "tslint-eslint-rules": "^5.4.0",
     "typescript": "^3.1.6"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
+    }
   },
   "lint-staged": {
     "**/*.{mjs, js, ts}": [
