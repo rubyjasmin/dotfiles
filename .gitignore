@@ -13,3 +13,6 @@ pids
 *.pid
 *.seed
 *.pid.lock
+
+# Certificates and Tokens
+.certs
